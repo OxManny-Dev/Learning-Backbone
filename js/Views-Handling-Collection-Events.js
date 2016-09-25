@@ -1,7 +1,3 @@
-// In the first few sections, we do all the coding here.
-// Later, you'll see how to organize your code into separate
-// files and modules.
-
 // Views handling Collection events
 
 // Often useful for when models are added to or removed from the collection
@@ -51,7 +47,7 @@ var SongsView = Backbone.View.extend({
   },
 
   onSongRemoved: function(song){
-    // Finds the element with that song id and remove it 
+    // Finds the element with that song id and remove it
     this.$el.find('li#' + song.id).remove();
   },
 
