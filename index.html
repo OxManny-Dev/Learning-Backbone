@@ -14,10 +14,18 @@
         <script src="js/lib/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
-        <ul id='songs'></ul>
+      <div id="container"></div>
         <script src="js/lib/jquery-min.js"></script>
         <script src="js/lib/underscore-min.js"></script>
         <script src="js/lib/backbone-min.js"></script>
+        <script id='songTemplate' type='text/html'>
+          <!-- The title of the song -->
+          <%= title %>
+          <button>Listen</button>
+          <% if (plays > 1000) { %>
+            <span class="Popular">Popular</span>
+          <% } %>
+        </script>
         <script src="js/main.js"></script>
     </body>
 </html>
