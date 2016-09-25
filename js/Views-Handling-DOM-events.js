@@ -4,7 +4,7 @@
 
 
 // 1. Render content
-// 2. Respond to DOM/model events
+// 2. Respond to DOM events
 
 var Song = Backbone.Model.extend();
 
